@@ -7,7 +7,7 @@ Analyzes posts and comments from r/recruitinghell to identify top recruitment pr
 - Fetches posts from r/recruitinghell with configurable lookback period
 - Extracts all comments from posts
 - Analyzes content using OpenAI GPT to identify recruitment problems
-- Generates comprehensive reports in JSON and Markdown formats
+- Generates comprehensive reports in JSON format
 - Progress tracking and batch processing for large datasets
 
 ## Setup
@@ -66,9 +66,8 @@ python main.py --help
 
 ## Output
 
-The tool generates two files:
-1. `recruitment_problems_report.json` - Detailed analysis in JSON format
-2. `recruitment_problems_report.md` - Human-readable summary in Markdown
+The tool generates:
+- `recruitment_problems_report.json` - Detailed analysis in JSON format with top problems, themes, and recommendations
 
 ## Example Output
 
@@ -86,4 +85,4 @@ The analysis identifies problems such as:
 - Reddit API: ~60 requests per minute
 - OpenAI API: Depends on your tier
 
-The tool handles rate limiting automatically with progress bars showing fetch status.# reddit_analysis
+The tool handles rate limiting automatically with progress bars showing fetch status.
